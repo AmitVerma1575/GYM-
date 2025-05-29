@@ -1,0 +1,112 @@
+*{margin: 0px;
+padding: 0px;}
+
+/* nav-bar */
+
+.lnk-img{width: 30px;
+margin-left: 12px;}
+
+.lnk{text-decoration: none;
+color: black;
+padding: 10px;}
+
+.lnk:hover{display: none;}
+
+.nav-item{font-weight:500;}
+
+.nav-item a:hover{text-decoration: underline;
+font-size: 17px;
+font-style: italic;
+    
+}
+
+
+/* image and heading */
+
+/* for text */
+
+.content-heading h1{margin: 100px;
+     color: aliceblue;
+font-size: 4.75rem;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 600;}
+
+/* for anker tag */
+
+.s-btn{text-decoration: none;
+color: rgb(0, 0, 0);
+padding: 15px;
+font-weight: 500;
+font-size:18px;}
+
+/* for hover */
+
+.s-btn:hover{background-color:white;
+color: black;
+border-radius:10px;
+padding-right: 260px;
+transition: 1s;}
+
+/* for button */
+
+.S-btn{border:0.5px solid rgb(204, 201, 201);
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+margin-left: 6rem;
+height: 45px;}
+
+
+.content-image img{width: 100%;
+height: 100%; border-radius: 20px;}
+
+
+
+     /* GYM-FASHION */
+
+.G-fashion img{width: 100%;
+height: 100%;
+border-radius: 50px;
+margin-top: 5rem;
+filter: grayscale(20%);}
+
+.G-fashion img:hover{width:99.7%;
+filter: blur(.3rem);}
+
+.style-text h5{text-align: center;
+font-size: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+margin-top: 2rem;}
+
+
+/* gym-virtual-tour*/
+
+.tour-heading h1{ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: center;}
+
+.virtual-tour{ margin-top: 3rem;}
+
+/* gym-points */
+
+
+.paragragh-gym h6{padding-top: 30px;}
+
+/* gym news */
+
+.news img{width: 100%;
+margin-top: 2rem;}
+
+.news a:hover{opacity: calc(.7);}
+
+
+.news h5{margin-top:1.55rem;
+font-size: 25px;
+text-align: center;}
+
+/* INSTAGRAM POSTS  */
+
+.sec-N-img img{width: 100%;
+margin-top: 3rem;}
+
+/* hover for instagram */
+
+.sec-N-img img:hover{filter: brightness(.3);}
