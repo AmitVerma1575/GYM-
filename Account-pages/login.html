@@ -2,30 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login / Register Flip Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login/Register Slide UI</title>
   <link rel="stylesheet" href="./login-style/L-Style.css" />
 </head>
 <body>
-  <div class="container">
-    <input type="checkbox" id="toggle" hidden>
-    <div class="card">
-      <div class="front">
-        <h2>Login</h2>
-        <input type="text" placeholder="Username" required />
-        <input type="password" placeholder="Password" required />
-        <button>Login</button>
-        <label for="toggle">Don't have an account? Register</label>
-      </div>
-      <div class="back">
-        <h2>Register</h2>
-        <input type="text" placeholder="Username" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form>
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Username" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
         <button>Register</button>
-        <label for="toggle">Already have an account? Login</label>
+      </form>
+    </div>
+
+    <div class="form-container sign-in">
+      <form>
+        <h2>Sign In</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+      </form>
+    </div>
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel left">
+          <h2>Welcome Back!</h2>
+          <p>Already have an account?</p>
+          <button class="ghost" id="signIn">Login</button>
+        </div>
+        <div class="overlay-panel right">
+          <h2>Hello, Friend!</h2>
+          <p>Don’t have an account?</p>
+          <button class="ghost" id="signUp">Register</button>
+        </div>
       </div>
     </div>
   </div>
+
+  <script>
+    const container = document.getElementById("container");
+    document.getElementById("signUp").addEventListener("click", () =>
+      container.classList.add("active-panel")
+    );
+    document.getElementById("signIn").addEventListener("click", () =>
+      container.classList.remove("active-panel")
+    );
+  </script>
 </body>
 </html>
