@@ -85,3 +85,22 @@ button:hover {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+ ✨ Make registration form bigger */
+.container.active-panel .sign-up form {
+  transform: scale(1.15);
+}
+
+.container.active-panel .sign-up form h2 {
+  font-size: 28px;
+}
+
+.container.active-panel .sign-up form input {
+  padding: 16px;
+  font-size: 16px;
+}
+
+.container.active-panel .sign-up form button {
+  padding: 14px;
+  font-size: 16px;
+}
