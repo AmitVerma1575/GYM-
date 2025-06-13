@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trainer Dashboard</title>
+  <link rel="stylesheet" href="./chat-style/chat-style.css" />
+</head>
+<body>
+  <div class="dashboard-wrapper">
+    
+    <!-- Sidebar: Trainer Info & User List -->
+    <div class="sidebar">
+      <div class="trainer-profile">
+        <img src="../images/t1.jpg" alt="Trainer Photo" />
+        <div>
+          <h3>Trainer Amit</h3>
+          <p>Owner, Gold Gym</p>
+        </div>
+      </div>
+
+      <h4>Members Chat</h4>
+      <div class="user-list">
+        <div class="user-entry" onclick="switchUser('Rahul Sharma')">
+          <img src="../images/p1.jpg" />
+          <p>Rahul Sharma</p>
+        </div>
+        <div class="user-entry" onclick="switchUser('Sneha Verma')">
+          <img src="../images/p2.jpg"/>
+          <p>Sneha Verma</p>
+        </div>
+        <div class="user-entry" onclick="switchUser('John Doe')">
+          <img src="../images/p3.jpg" />
+          <p>John Doe</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Section -->
+    <div class="chat-area">
+      <div class="chat-header">
+        <h3 id="chatUser">Chat with Rahul Sharma</h3>
+        <p>Ask and solve fitness or diet doubts</p>
+      </div>
+
+      <div class="chat-box" id="chatBox">
+        <div class="message received">Hi Trainer, should I eat after evening workout?</div>
+        <div class="message sent">Yes! Prefer a high-protein meal within 30 minutes.</div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="messageInput" placeholder="Type your answer..." />
+        <input type="file" id="imageInput" accept="image/*" hidden onchange="sendImage()" />
+        <button onclick="document.getElementById('imageInput').click()">📷</button>
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="trainer-dashboard.js"></script>
+</body>
+</html>
