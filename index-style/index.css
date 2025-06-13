@@ -110,3 +110,17 @@ margin-top: 3rem;}
 /* hover for instagram */
 
 .sec-N-img img:hover{filter: brightness(.3);}
+.btn a{
+     padding:10px;
+     font-weight: 500; 
+     background-color: black;
+     color: white;
+     text-decoration: none;
+      border-radius: 10px;
+}
+.btn a:hover{
+     color: white;
+          background-color:transparent;
+          color: black;
+          border:  2px solid black;
+}
